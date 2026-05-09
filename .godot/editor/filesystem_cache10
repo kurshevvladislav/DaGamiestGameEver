@@ -1,10 +1,10 @@
 63f7b34db8d8cdea90c76aacccf841ec
-::res://::1778330969
+::res://::1778332059
 default_bus_layout.tres::AudioBusLayout::7033788499151259874::1778327883::0::1::::<><><>0<>0<><>::
 icon.webp::CompressedTexture2D::1435534909793147580::1778327095::1778327143::1::::<><><>0<>0<>af6e985577530b323a2cd441aba5983f<>res://.godot/imported/icon.webp-e94f9a68b0f625a567a797079e4d325f.ctex::
 README.md::TextFile::-1::1778327095::0::1::::<><><>0<>0<><>::
-stage.tscn::PackedScene::4550654010570525094::1778330491::0::1::::<><><>0<>0<><>::uid://rowrak7ls50v::::res://tileset.tres<>uid://daqqtote00syu::::res://enemy/enemy.tscn<>uid://6uilf6rad880::::res://coin/coin.tscn<>uid://bbxsp4gp554vh::::res://player/player.tscn<>uid://dkmxopg1dknq8::::res://platform/one_way_platform.tscn<>uid://csdn3dwkaprow::::res://background/parallax_bg.tscn<>uid://gunv00cij80t::::res://audio/music.ogg
-tileset.tres::TileSet::1223477779658053279::1778329282::0::1::::<><><>0<>0<><>::uid://dbcdt0wqr3gd3::::res://tiles_demo.png
+stage.tscn::PackedScene::4550654010570525094::1778331009::0::1::::<><><>0<>0<><>::uid://rowrak7ls50v::::res://tileset.tres<>uid://daqqtote00syu::::res://enemy/enemy.tscn<>uid://6uilf6rad880::::res://coin/coin.tscn<>uid://bbxsp4gp554vh::::res://player/player.tscn<>uid://dkmxopg1dknq8::::res://platform/one_way_platform.tscn<>uid://csdn3dwkaprow::::res://background/parallax_bg.tscn<>uid://gunv00cij80t::::res://audio/music.ogg
+tileset.tres::TileSet::1223477779658053279::1778331009::0::1::::<><><>0<>0<><>::uid://dbcdt0wqr3gd3::::res://tiles_demo.png
 tileset_edit.tscn::PackedScene::-1::1778327095::0::1::::<><><>0<>0<><>::res://tiles_demo.png
 tiles_demo.png::CompressedTexture2D::7233797079108190346::1778327095::1778327143::1::::<><><>0<>0<>eec68f5055a7582627034cda9016b11f<>res://.godot/imported/tiles_demo.png-7ca5c7c5c02ab8abe0d585a6a8f086bd.ctex::
 ::res://audio/::1778330022
