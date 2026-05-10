@@ -1,0 +1,37 @@
+name: godot-ci
+
+on:
+  push:
+    branches: [ main ]
+
+env:
+  GODOT_VERSION: 4.2.1-stable   # ← замените на вашу версию
+
+jobs:
+  export-game:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    name: Export game
+    steps:
+      - name: Checkout source code
+        uses: actions/checkout@v3
+
+      - name: Godot Export
+        id: export
+        uses: firebelley/godot-export@v7.0.0
+        with:
+          godot_executable_download_url: https://github.com/godotengine/godot/releases/download/${GODOT_VERSION}/Godot_v${GODOT_VERSION}_linux.x86_64.zip
+          godot_export_templates_download_url: https://github.com/godotengine/godot/releases/download/${GODOT_VERSION}/Godot_v${GODOT_VERSION}_export_templates.tpz
+          relative_project_path: ./
+          cache: true
+        env:
+          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
+
+      - name: Create release
+        uses: ncipollo/release-action@v1.18.0
+        with:
+          token: ${{ secrets.GH_TOKEN }}
+          generateReleaseNotes: true
+          tag: ${{ github.ref_name }}
+          artifacts: ${{ steps.export.outputs.archive_directory }}/*
