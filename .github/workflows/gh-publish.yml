@@ -2,10 +2,10 @@ name: godot-ci
 
 on:
   push:
-    branches: [ main ]
+    branches: [ master ]
 
 env:
-  GODOT_VERSION: 4.2.1-stable   # ← замените на вашу версию
+  GODOT_VERSION: 4.2.1-stable   # укажите свою версию, если отличается
 
 jobs:
   export-game:
@@ -22,7 +22,7 @@ jobs:
         uses: firebelley/godot-export@v7.0.0
         with:
           godot_executable_download_url: https://github.com/godotengine/godot/releases/download/${GODOT_VERSION}/Godot_v${GODOT_VERSION}_linux.x86_64.zip
-          godot_export_templates_download_url: https://github.com/godotengine/godot/releases/download/${GODOT_VERSION}/Godot_v${GODOT_VERSION}_export_templates.tpz
+          godot_export_templates_download_url: https://github.com/godotengine/godot/releases/download/${GODOT_VERSION}/Godot_v${GODOT_VERSION}_export_templates.tgz
           relative_project_path: ./
           cache: true
         env:
